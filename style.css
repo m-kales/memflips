@@ -1,3 +1,13 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 50px;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +21,7 @@ img {
     height: 100px;
     padding: 2px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 .inactive {
