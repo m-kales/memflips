@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'turtle',
             img: './assets/turtle.svg'
         },
-        {
+                {
             name: 'beaver',
             img: './assets/beaver.svg'
         },
@@ -153,6 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let cards = document.querySelectorAll('img');
         const optionOneId = cardsChosenId[0];
         const optionTwoId = cardsChosenId[1];
+        grid.classList.remove('inactive');
         
         if (optionOneId == optionTwoId) {
             cards[optionOneId].setAttribute('src', './assets/blank.svg');
@@ -171,7 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoId].setAttribute('src', './assets/blank.svg');
             /*alert('Try again.');*/
         }
-        
         /*if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match');
             cards[optionOneId].setAttribute('src', './assets/white.svg');
@@ -189,13 +189,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function flipCard() {
+    async function flipCard() {
         let cardId = this.getAttribute('data-id');
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         this.setAttribute('src', cardArray[cardId].img);
         if (cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 500);  
+            grid.classList.add('inactive');
+            setTimeout(checkForMatch, 1000);
         }
     }
     createBoard();

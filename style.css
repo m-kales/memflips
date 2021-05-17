@@ -3,9 +3,14 @@
     flex-wrap: wrap;
     height: 400px;
     width: 800px;
+    cursor: pointer;
 }
 
 img {
     width: 100px;
     height: 100px;
+}
+
+.inactive {
+    pointer-events: none;
 }
