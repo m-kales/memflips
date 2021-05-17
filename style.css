@@ -1,14 +1,16 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
-    width: 800px;
+    height: 416px;
+    width: 832px;
     cursor: pointer;
 }
 
 img {
     width: 100px;
     height: 100px;
+    padding: 2px;
+    border-radius: 10px;
 }
 
 .inactive {
