@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.setAttribute('src', cardArray[cardId].img);
         if (cardsChosen.length === 2) {
             grid.classList.add('inactive');
-            setTimeout(checkForMatch, 1500);
+            setTimeout(checkForMatch, 1000);
         }
     }
     createBoard();
