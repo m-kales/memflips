@@ -2,15 +2,16 @@
     "lang": "en",
     "dir": "ltr",
     "name": "MemFlips",
+    "short_name": "MemFlips",
     "icons": [{
-      "src": "assets/blank.svg",
+      "src": "/assets/blank.svg",
       "sizes": "64x64",
       "type": "image/svg"
     }
     ],
     "scope": "/",
     "start_url": "/index.html",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "landscape",
     "theme_color": "aliceblue",
     "background_color": "lightgreen"
