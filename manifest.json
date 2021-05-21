@@ -4,8 +4,8 @@
     "name": "MemFlips",
     "short_name": "MemFlips",
     "icons": [{
-      "src": "/assets/blank.svg",
-      "sizes": "64x64",
+      "src": "/assets/blank.png",
+      "sizes": "100x100",
       "type": "image/svg"
     }
     ],
@@ -14,5 +14,5 @@
     "display": "standalone",
     "orientation": "landscape",
     "theme_color": "aliceblue",
-    "background_color": "lightgreen"
+    "background_color": "aliceblue"
   }
