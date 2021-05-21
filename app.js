@@ -181,20 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoId].setAttribute('src', './assets/blank.svg');
             /*alert('Try again.');*/
         }
-        /*if (cardsChosen[0] === cardsChosen[1]) {
-            alert('You found a match');
-            cards[optionOneId].setAttribute('src', './assets/white.svg');
-            cardsWon.push(cardsChosen)
-        } else {
-            cards[optionOneId].setAttribute('src', './assets/blank.svg');
-            cards[optionTwoId].setAttribute('src', './assets/blank.svg');
-            alert('Sorry, try again')
-        }*/
+
         cardsChosen = [];
         cardsChosenId = [];
         resultDisplay.textContent = cardsWon.length;
         if (cardsWon.length === cardArray.length/2) {
-            resultDisplay.textContent = 'Congratulations! You found them all!'
+            resultDisplay.textContent = 'Jubijææ!'
         }
     }
 
