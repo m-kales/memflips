@@ -1,0 +1,17 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "MemFlips",
+    "icons": [{
+      "src": "assets/blank.svg",
+      "sizes": "64x64",
+      "type": "image/svg"
+    }
+    ],
+    "scope": "/",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "theme_color": "aliceblue",
+    "background_color": "lightgreen"
+  }
