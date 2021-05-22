@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const grid = document.querySelector('.grid');
     const resultDisplay = document.querySelector('#result');
+    const reloadBtn = document.getElementById('reload-btn');
     let cardsChosen = [];
     let cardsChosenId = [];
     let cardsWon = [];
@@ -186,8 +187,15 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId = [];
         resultDisplay.textContent = cardsWon.length;
         if (cardsWon.length === cardArray.length/2) {
-            resultDisplay.textContent = 'Jubijææ!'
+            resultDisplay.textContent = 'Jubijææ! Du fandt dem.'
+            reloadBtn.classList.remove('hidden');
         }
+
+        function refreshFunc() {
+            location.reload();
+            console.log('reloaded');
+        }
+        reloadBtn.addEventListener('click', refreshFunc);
     }
 
     async function flipCard() {
@@ -200,5 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(checkForMatch, 1000);
         }
     }
+
     createBoard();
 })
