@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -25,14 +26,14 @@ main {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 416px;
-    width: 832px;
+    height: 90vh;
+    width: 90vw;
     cursor: pointer;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 11vw;
+    height: auto;
     padding: 2px;
     border-radius: 10px;
     transition: all .1s ease;
