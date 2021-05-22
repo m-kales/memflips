@@ -26,7 +26,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     max-width: 90vw;
-    height: auto;
     cursor: pointer;
 }
 
@@ -34,8 +33,12 @@ img {
     width: 11vw;
     height: auto;
     margin: 1em;
-    border-radius: 1em;
+    border-radius: .6em;
     transition: all .1s ease;
+}
+
+#score {
+    margin: 1em;
 }
 
 img:hover, img:active, img:focus {
