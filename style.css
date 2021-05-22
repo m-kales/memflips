@@ -20,14 +20,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100vw;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    /*height: 90vh;
-    width: 90vw;*/
+    max-height: 90vh;
+    max-width: 90vw;
     cursor: pointer;
 }
 
@@ -52,7 +51,7 @@ button#reload-btn {
   background-color: olivedrab;
   color: white;
   cursor: pointer;
-  transition: all .1s ease;
+  transition: scale .1s ease;
 }
 
 button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
