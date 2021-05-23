@@ -25,7 +25,7 @@ main {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    max-width: 90vw;
+    max-width: 98vw;
     cursor: pointer;
 }
 
@@ -34,7 +34,7 @@ img {
     height: auto;
     margin: .1em;
     border-radius: .4em;
-    transition: all .1s ease;
+    transition: scale .1s ease;
 }
 
 #score {
@@ -62,7 +62,7 @@ button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
     transform-origin: center;
     background-color: olive;
     color: snow;
-margin: 1em;
+    margin: 1em;
 }
 
 .hidden {
