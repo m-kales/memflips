@@ -193,7 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function refreshFunc() {
             location.reload();
-            console.log('reloaded');
         }
         reloadBtn.addEventListener('click', refreshFunc);
     }
@@ -205,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.setAttribute('src', cardArray[cardId].img);
         if (cardsChosen.length === 2) {
             grid.classList.add('inactive');
-            setTimeout(checkForMatch, 1000);
+            setTimeout(checkForMatch, 700);
         }
     }
 
