@@ -1,11 +1,13 @@
 html {
     height: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-height: 100vh;
 }
 
 .score {
@@ -14,48 +16,54 @@ body {
 }
 
 main {
-    padding-top: 2em;
+    margin-top: 1em;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    max-width: 100vw;
-    height: auto;
-    overflow: hidden;
+    align-items: center;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 416px;
-    width: 832px;
+    height: auto;
+    width: 96vw;
     cursor: pointer;
+    place-content: center;
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 11vw;
+    height: auto;
     padding: 2px;
-    border-radius: 10px;
+    border-radius: .4em;
+    -webkit-transition: all .1s ease;
     transition: all .1s ease;
 }
 
 img:hover, img:active, img:focus {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
 }
 
 button#reload-btn {  
   padding: .6em 1.6em;
-  border-radius: 4px;
+  border-radius: .4em;
   outline: none;
   border: none;
   background-color: olivedrab;
   color: white;
   cursor: pointer;
-  transition: all .1s ease;
+  -webkit-transition: scale .1s ease;
+  transition: scale .1s ease;
+  margin-bottom: 1em;
+  font-weight: 700;
+  letter-spacing: .2ch;
 }
 
 button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
+    -webkit-transform: scale(.9);
     transform: scale(.9);
     transform-origin: center;
     background-color: olive;
@@ -63,9 +71,17 @@ button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 .inactive {
     pointer-events: none;
+}
+
+@media screen and  (max-height: 450px) {
+    img {
+        height: 17vh;
+        width: auto;
+    }
+    
 }
