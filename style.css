@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     max-height: 100vh;
+    overflow: hidden;
 }
 
 .score {
@@ -18,7 +19,7 @@ body {
 }
 
 main {
-    margin-top: 1em;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,4 +88,7 @@ button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
         width: auto;
     }
     
+    .grid {
+        width: 72vw;
+    }
 }
