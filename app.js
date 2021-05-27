@@ -176,6 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoId].setAttribute('src', './assets/white.svg');
             cards[optionOneId].removeEventListener('click', flipCard);
             cards[optionTwoId].removeEventListener('click', flipCard);
+            cards[optionOneId].classList.add('no-hover');
+            cards[optionTwoId].classList.add('no-hover');
             cardsWon.push(cardsChosen);
         } else {
             cards[optionOneId].setAttribute('src', './assets/blank.svg');

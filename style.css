@@ -11,6 +11,7 @@ body {
     padding: 0;
     max-height: 100vh;
     overflow: hidden;
+    color: rgb(18, 27, 8);
 }
 
 .score {
@@ -36,18 +37,24 @@ main {
 }
 
 img {
+    background-color: transparent;
     width: 11vw;
     height: auto;
     padding: 2px;
     border-radius: .4em;
-    -webkit-transition: all .1s ease;
-    transition: all .1s ease;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
 }
 
-img:hover, img:active, img:focus {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+img:hover, img:focus {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 0 -4px 20px #522b0722;
+}
+
+img.no-hover:hover {
+    transform: unset;
+    box-shadow: unset;
 }
 
 button#reload-btn {  
@@ -56,26 +63,25 @@ button#reload-btn {
   outline: none;
   border: none;
   background-color: olivedrab;
-  color: white;
   cursor: pointer;
-  -webkit-transition: scale .1s ease;
-  transition: scale .1s ease;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   margin-bottom: 1em;
+  font-size: 1.1em;
   font-weight: 700;
   letter-spacing: .2ch;
+  color: snow;
+  margin: 1em;
 }
 
 button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
-    -webkit-transform: scale(.9);
-    transform: scale(.9);
-    transform-origin: center;
-    background-color: olive;
-    color: snow;
-    margin: 1em;
+    -webkit-transform: scale(.9) translateY(4px);
+    transform: scale(.9) translateY(4px);
+    transform-origin: top;
 }
 
 .hidden {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .inactive {
