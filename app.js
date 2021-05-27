@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     const resultDisplay = document.querySelector('#result');
     const reloadBtn = document.getElementById('reload-btn');
+    const modalOverlay = document.querySelector('.modal-overlay');
     let cardsChosen = [];
     let cardsChosenId = [];
     let cardsWon = [];
@@ -189,12 +190,13 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId = [];
         resultDisplay.textContent = cardsWon.length;
         if (cardsWon.length === cardArray.length/2) {
-            resultDisplay.textContent = 'Jubijææ! Du fandt dem.'
-            reloadBtn.classList.remove('hidden');
+            modalOverlay.classList.add('open-modal');
+            grid.classList.add('hidden');
         }
 
         function refreshFunc() {
             location.reload();
+            modalOverlay.classList.remove('open-modal');
         }
         reloadBtn.addEventListener('click', refreshFunc);
     }
