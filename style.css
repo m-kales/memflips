@@ -53,7 +53,7 @@ img {
     transition: all .2s ease;
 }
 
-img:hover, img:focus {
+img:hover, img:focus, img:active {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     box-shadow: 0 -4px 20px #522b0722;
