@@ -13,6 +13,6 @@
     "start_url": "/index.html",
     "display": "standalone",
     "orientation": "landscape",
-    "theme_color": "olivedrab",
-    "background_color": "olivedrab"
+    "theme_color": "#728357",
+    "background_color": "#728357"
   }
