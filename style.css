@@ -23,11 +23,9 @@ body {
 }
 
 main {
-    padding-top: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
 .grid {
@@ -246,12 +244,16 @@ button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
 
 @media screen and  (max-height: 450px) {
     img {
-        height: 17vh;
+        height: 16vh;
         width: auto;
     }
     
     .grid {
         width: 72vw;
+    }
+
+    .score {
+        display: none;
     }
 }
 
