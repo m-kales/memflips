@@ -136,7 +136,7 @@ button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
     pointer-events: none;
 }
 
-.circles{
+/* .circles{
     position: absolute;
     top: 0;
     left: 0;
@@ -231,11 +231,11 @@ button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
     height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
-}
+} */
 
 
 
-@keyframes animate {
+/* @keyframes animate {
 
     0%{
         transform: translateY(0) rotate(0deg);
@@ -249,7 +249,7 @@ button#reload-btn:hover, button#reload-btn:active, button#reload-btn:focus {
         border-radius: 50%;
     }
 
-}
+} */
 
 @media screen and  (max-height: 450px) {
     img {
